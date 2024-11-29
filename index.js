@@ -13,8 +13,8 @@ function calculate() {
     return;
   }
 
-  const consumption = currentReading - lastReading;
-  const totalCost = consumption * price;
+  const consumption = currentReading - lastReading; // en este paso se calcula el gasto, a la lectura actual se le resta la ultima lectura  y se calcula consumision
+  const totalCost = consumption * price; // la consumision por el precio da el resultado final del gasto total 
 
   const resultDiv = document.getElementById('result');
   resultDiv.style.display = 'block';
